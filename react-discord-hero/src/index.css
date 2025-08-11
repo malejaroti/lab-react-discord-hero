@@ -101,19 +101,17 @@ nav img {
 }
 
 .hero h1 {
-  max-width: 40%;
+  width: 38%;
   line-height: 1;
   /* border: 1px white solid; */
 }
 
 .hero p {
-  /* width: fit-content; */
-  max-width: 50%;
-
+  width: 50%;
   /* border: 1px white solid; */
 }
 
-.hero__actions {
+.hero__buttons {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -138,4 +136,36 @@ nav img {
   width: 50%;
   height: 65%;
   /* border: 3px blue solid; */
+}
+
+/* For monitor screen (Chrome: width:2325px, height:1546px ) */
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 10rem;
+    width: 50%;
+    margin: 4rem 0;
+  }
+
+  p {
+    font-size: 2.5rem;
+    width: 45% !important;
+    /* border: 1px white solid; */
+    margin: 0 0 5rem;
+  }
+
+  button {
+    font-size: 2rem;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero img {
+    width: 65%;
+    height: 82%;
+    right: -200px;
+    bottom: -150px;
+    /* border: 1px yellow solid; */
+  }
 }
